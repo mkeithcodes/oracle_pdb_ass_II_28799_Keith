@@ -12,7 +12,12 @@ FILE_NAME_CONVERT = ('C:\app\oracle\oradata\ORCL\pdbseed\',
 
 # Task 2: Create and Delete a PDB
 A PDB was created and named ke_to_delete_pdb_28799 
-
+`CREATE PLUGGABLE DATABASE ke_to_delete_pdb_28799
+ADMIN USER admin_temp_ke IDENTIFIED BY "kePass123"
+FILE_NAME_CONVERT = ('C:\app\oracle\oradata\ORCL\pdbseed\', 
+                     'C:\app\oracle\oradata\ORCL\ke_temp_28799\');`
+delete`DROP PLUGGABLE DATABASE ke_to_delete_pdb_28799 INCLUDING DATAFILES;
+`
 # Task 3: Oracle Enterprise Manager (OEM)
 
 I logged in the oracle enterprise manager as the screenshot shows:
