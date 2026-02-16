@@ -1,8 +1,13 @@
 # Individual Assignment II: Oracle Pluggable Databases management.
-Manzi keith. ID:28799
+# Manzi keith. ID:28799
 
 # Task 1: Create a New Pluggable Database:
 I created a pluggable database called ke_pdb_28799
+
+through this steps:
+1. logged in CDB.
+2. created the pluggable database.
+3. created a user inside PDB.
 
 `CREATE PLUGGABLE DATABASE ke_pdb_28799
 ADMIN USER admin_ke IDENTIFIED BY "kePass123"
@@ -13,6 +18,10 @@ FILE_NAME_CONVERT = ('C:\app\oracle\oradata\ORCL\pdbseed\',
 # Task 2: Create and Delete a PDB
 A PDB was created and named ke_to_delete_pdb_28799 
 
+steps:
+1. created a pluggable database
+2. verified it existed
+3. deleted the PDB completely
 `CREATE PLUGGABLE DATABASE ke_to_delete_pdb_28799
 ADMIN USER admin_temp_ke IDENTIFIED BY "kePass123"
 FILE_NAME_CONVERT = ('C:\app\oracle\oradata\ORCL\pdbseed\', 
@@ -29,3 +38,6 @@ I logged in the oracle enterprise manager as the screenshot shows:
 
 # Task 4: Documentation & Reporting
 The above readme reports all the tasks and explanations i have completed on oracle pluggable database management. 
+
+# Integrity statement 
+All the tasks above were performed by me on oracle application. 
